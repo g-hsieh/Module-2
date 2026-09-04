@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CIS 106 PS1p5"/>
+        <attribute name="authors" value="kmshi_000"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-04 01:43:38 PM"/>
+        <attribute name="created" value="a21zaGlfMDAwO01PTS1BU1VTLTMwMzsyMDI2LTA4LTMwOzAxOjE5OjQwIFBNOzI4NDg="/>
+        <attribute name="edited" value="a21zaGlfMDAwO01PTS1BU1VTLTMwMzsyMDI2LTA5LTA0OzAxOjQzOjM4IFBNOzEyOzMwMTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Price" type="Real" array="False" size=""/>
+            <declare name="DiscountPercent" type="Real" array="False" size=""/>
+            <declare name="DiscountAmount" type="Real" array="False" size=""/>
+            <declare name="DiscountedPrice" type="Real" array="False" size=""/>
+            <output expression="&quot;What is the original price?&quot;" newline="True"/>
+            <input variable="Price"/>
+            <output expression="&quot;Enter the percentage in decimal form (for example, 0.10 for 10%) &quot;" newline="True"/>
+            <input variable="DiscountPercent"/>
+            <assign variable="DiscountAmount" expression="Price * DiscountPercent"/>
+            <assign variable="DiscountedPrice" expression="Price - DiscountAmount"/>
+            <output expression="&quot;The Discount Amount in dollars is &quot; &amp;DiscountAmount" newline="True"/>
+            <output expression="&quot;The Discounted Price in dollars is &quot; &amp;DiscountedPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

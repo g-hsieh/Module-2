@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CIS 106 PS1p1"/>
+        <attribute name="authors" value="kmshi_000"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-04 01:36:30 PM"/>
+        <attribute name="created" value="a21zaGlfMDAwO01PTS1BU1VTLTMwMzsyMDI2LTA4LTI5OzA0OjQ2OjM0IFBNOzI4NjI="/>
+        <attribute name="edited" value="a21zaGlfMDAwO01PTS1BU1VTLTMwMzsyMDI2LTA5LTA0OzAxOjM2OjMwIFBNOzM7Mjk1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Quantity" type="Real" array="False" size=""/>
+            <declare name="unitprice" type="Real" array="False" size=""/>
+            <declare name="extprice" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the quantity of computers &quot;" newline="True"/>
+            <input variable="Quantity"/>
+            <output expression="&quot;Enter the price per unit &quot;" newline="True"/>
+            <input variable="unitprice"/>
+            <assign variable="extprice" expression="Quantity * Unitprice"/>
+            <output expression="&quot;Your Extended Price is $&quot; &amp; extprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
